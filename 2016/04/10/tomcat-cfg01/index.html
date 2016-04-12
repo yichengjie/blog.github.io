@@ -80,15 +80,22 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2016/index.html">
+<meta name="description" content="在开发WEB项目的时候，有时候需要用户上传一些图片文件之类的，传统做法是上传到部署目录下，这样会造成一个问题，当我们要重新部署项目的时候，发布一个新的war包，就要求删除之前的项目文件夹，这时候要保留用户上传的资源文件，就要把资源文件复制出来，然后项目部署成功之后又复制进部署目录，这样做很麻烦，为了避免这个问题，就需要将资源文件夹做成一个虚拟目录。
+
+示例如下&amp;lt;Host appBase=&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java web项目 图片资源与部署目录分离">
+<meta property="og:url" content="http://yoursite.com/2016/04/10/tomcat-cfg01/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description">
+<meta property="og:description" content="在开发WEB项目的时候，有时候需要用户上传一些图片文件之类的，传统做法是上传到部署目录下，这样会造成一个问题，当我们要重新部署项目的时候，发布一个新的war包，就要求删除之前的项目文件夹，这时候要保留用户上传的资源文件，就要把资源文件复制出来，然后项目部署成功之后又复制进部署目录，这样做很麻烦，为了避免这个问题，就需要将资源文件夹做成一个虚拟目录。
+
+示例如下&amp;lt;Host appBase=&amp;">
+<meta property="og:updated_time" content="2016-04-12T12:40:49.624Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description">
+<meta name="twitter:title" content="java web项目 图片资源与部署目录分离">
+<meta name="twitter:description" content="在开发WEB项目的时候，有时候需要用户上传一些图片文件之类的，传统做法是上传到部署目录下，这样会造成一个问题，当我们要重新部署项目的时候，发布一个新的war包，就要求删除之前的项目文件夹，这时候要保留用户上传的资源文件，就要把资源文件复制出来，然后项目部署成功之后又复制进部署目录，这样做很麻烦，为了避免这个问题，就需要将资源文件夹做成一个虚拟目录。
+
+示例如下&amp;lt;Host appBase=&amp;">
 
 
 
@@ -106,7 +113,7 @@
   };
 </script>
 
-  <title> 归档 | Hexo </title>
+  <title> java web项目 图片资源与部署目录分离 | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -127,7 +134,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -205,140 +212,123 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 3 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/10/tomcat-cfg01/" itemprop="url">
-              
-                <span itemprop="name">java web项目 图片资源与部署目录分离</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-10T18:25:48+08:00"
-              content="2016-04-10" >
-          04-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/10/first-blog/" itemprop="url">
-              
-                <span itemprop="name">整理下工作中好用的工具</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-10T18:25:48+08:00"
-              content="2016-04-10" >
-          04-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/04/10/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-10T17:58:20+08:00"
-              content="2016-04-10" >
-          04-10
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
+  
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                java web项目 图片资源与部署目录分离
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-10T18:25:48+08:00" content="2016-04-10">
+              2016-04-10
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>在开发WEB项目的时候，有时候需要用户上传一些图片文件之类的，传统做法是上传到部署目录下，这样会造成一个问题，当我们要重新部署项目的时候，发布一个新的war包，就要求删除之前的项目文件夹，这时候要保留用户上传的资源文件，就要把资源文件复制出来，然后项目部署成功之后又复制进部署目录，这样做很麻烦，为了避免这个问题，就需要将资源文件夹做成一个虚拟目录。</p>
+</blockquote>
+<h3 id="示例如下"><a href="#示例如下" class="headerlink" title="示例如下"></a>示例如下</h3><pre><code>&lt;Host appBase=&quot;webapps&quot; autoDeploy=&quot;true&quot; name=&quot;localhost&quot;
+     unpackWARs=&quot;true&quot; xmlNamespaceAware=&quot;false&quot; xmlValidation=&quot;false&quot;&gt;  
+    &lt;Context docBase=&quot;weibo&quot; path=&quot;/weibo&quot; reloadable=&quot;true&quot; 
+            source=&quot;org.eclipse.jst.jee.server:weibo&quot;/&gt;  
+               &lt;!-- 设置图片虚拟路径[访问时路径为/static_img] --&gt;  
+    &lt;Context path=&quot;/static_img&quot; docBase=&quot;F:\temp&quot; reloadable=&quot;false&quot; /&gt;  
+&lt;/Host&gt; 
+</code></pre>
+      
+    </div>
+    
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/10/first-blog/" rel="next" title="整理下工作中好用的工具">
+                <i class="fa fa-chevron-left"></i> 整理下工作中好用的工具
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -346,6 +336,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -365,8 +359,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/default_avatar.jpg"
@@ -404,6 +407,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例如下"><span class="nav-number">1.</span> <span class="nav-text">示例如下</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -500,11 +514,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   
