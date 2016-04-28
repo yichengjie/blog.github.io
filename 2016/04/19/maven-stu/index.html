@@ -80,28 +80,31 @@
 
 
 
-<meta name="description" content="maven中加入插件跳过test代码运行&amp;lt;build&amp;gt;
+<meta name="description" content="maven中加入插件跳过test代码运行
+&amp;lt;build&amp;gt;
     &amp;lt;plugins&amp;gt;
       &amp;lt;plugin&amp;gt;
         &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
-        &amp;lt;artifactId&amp;gt;maven-surefire-plugin&amp;lt;/artifact">
+        &amp;lt;artifactId&amp;gt;maven-surefire-plugin&amp;lt;/artifac">
 <meta property="og:type" content="article">
 <meta property="og:title" content="maven相关知识点">
 <meta property="og:url" content="http://yoursite.com/2016/04/19/maven-stu/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="maven中加入插件跳过test代码运行&amp;lt;build&amp;gt;
+<meta property="og:description" content="maven中加入插件跳过test代码运行
+&amp;lt;build&amp;gt;
     &amp;lt;plugins&amp;gt;
       &amp;lt;plugin&amp;gt;
         &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
-        &amp;lt;artifactId&amp;gt;maven-surefire-plugin&amp;lt;/artifact">
-<meta property="og:updated_time" content="2016-04-19T11:24:02.872Z">
+        &amp;lt;artifactId&amp;gt;maven-surefire-plugin&amp;lt;/artifac">
+<meta property="og:updated_time" content="2016-04-28T11:57:19.875Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="maven相关知识点">
-<meta name="twitter:description" content="maven中加入插件跳过test代码运行&amp;lt;build&amp;gt;
+<meta name="twitter:description" content="maven中加入插件跳过test代码运行
+&amp;lt;build&amp;gt;
     &amp;lt;plugins&amp;gt;
       &amp;lt;plugin&amp;gt;
         &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
-        &amp;lt;artifactId&amp;gt;maven-surefire-plugin&amp;lt;/artifact">
+        &amp;lt;artifactId&amp;gt;maven-surefire-plugin&amp;lt;/artifac">
 
 
 
@@ -280,7 +283,8 @@
 
       
         <ul>
-<li>maven中加入插件跳过test代码运行<pre><code>&lt;build&gt;
+<li><p>maven中加入插件跳过test代码运行</p>
+<pre><code>&lt;build&gt;
     &lt;plugins&gt;
       &lt;plugin&gt;
         &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
@@ -291,6 +295,16 @@
       &lt;/plugin&gt;
     &lt;/plugins&gt;
   &lt;/build&gt;
+</code></pre></li>
+<li><p>maven中使用jetty plugin插件<br>pom.xml右键 run maven build –&gt; Goals <code>jetty:run</code><br>这时可能会报一个jetty指令的错误，需要去修改maven的主配置文件</p>
+<pre><code>&lt;pluginGroups&gt;
+    &lt;pluginGroup&gt;org.mortbay.jetty&lt;/pluginGroup&gt;
+    &lt;pluginGroup&gt;org.apache.tomcat.maven&lt;/pluginGroup&gt;
+    &lt;!-- pluginGroup
+     | Specifies a further group identifier to use for plugin lookup.
+    &lt;pluginGroup&gt;com.your.plugins&lt;/pluginGroup&gt;
+    --&gt;
+ &lt;/pluginGroups&gt;
 </code></pre></li>
 </ul>
 
