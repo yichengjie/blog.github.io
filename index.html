@@ -386,7 +386,7 @@
     &lt;/plugins&gt;
   &lt;/build&gt;
 </code></pre></li>
-<li><p>maven中使用jetty plugin插件<br>pom.xml右键 run maven build –&gt; Goals <code>jetty:run</code><br>这时可能会报一个jetty指令的错误，需要去修改maven的主配置文件</p>
+<li><p>maven中使用jetty plugin插件<br>pom.xml右键 run maven build –&gt; Goals <code>jetty:run</code><br>这时可能会报一个jetty指令的错误，需要去修改maven的主配置文件(maven安装目录conf/setting.xml)</p>
 <pre><code>&lt;pluginGroups&gt;
     &lt;pluginGroup&gt;org.mortbay.jetty&lt;/pluginGroup&gt;
     &lt;pluginGroup&gt;org.apache.tomcat.maven&lt;/pluginGroup&gt;
