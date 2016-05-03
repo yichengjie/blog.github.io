@@ -229,6 +229,125 @@
             
               
                 
+                <a class="post-title-link" href="/2016/04/29/ajax-fileupload/" itemprop="url">
+                  ajax fileupload
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-29T16:48:37+08:00" content="2016-04-29">
+              2016-04-29
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="ajax-fileupload的使用"><a href="#ajax-fileupload的使用" class="headerlink" title="ajax fileupload的使用"></a>ajax fileupload的使用</h3><ul>
+<li>下载jquery</li>
+<li>下载ajax fileuplad</li>
+<li>页面中引入 jquery + ajaxFileuplad文件</li>
+<li>页面html代码<pre><code>&lt;form method=&quot;post&quot;  enctype=&quot;multipart/form-data&quot; id =&quot;batchImportForm&quot;&gt;
+    &lt;input type=&quot;file&quot; name =&quot;file&quot; id =&quot;batchImportFileInput&quot; style=&quot;display: none&quot;/&gt;
+&lt;/form&gt;    
+</code></pre></li>
+<li>js部分代码<pre><code>$.ajaxFileUpload({
+    url:serverUrl, //用于文件上传的服务器端请求地址
+    type:&apos;post&apos;,
+    formId:&apos;batchImportForm&apos;,/*form的id*/
+    timeout:100000,
+    secureuri:false, //一般设置为false
+    dataType:&apos;json&apos;, //返回值类型 一般设置为json
+    success:function(datas, status){
+        cleanTipInfo() ;
+        addSuccessTip(&quot;导入操作完成...&quot;) ;
+    },
+    error:function(xmlHttpRequest, status, error) {
+        cleanTipInfo() ;
+        addErrorTip(&quot;导入失败！&quot;) ;
+    }
+});
+</code></pre></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/04/23/jquery-width-height/" itemprop="url">
                   jquery width height
                 </a>
@@ -408,7 +527,10 @@
     &lt;/configuration&gt;  
   &lt;/plugin&gt;
 </code></pre></li>
-<li>Maven3把命令行创建的web工程转成Eclipse和IntelliJ Idea的工程<br>  在执行mvn eclipse:eclipse命令之前一定要先存在一个含有pom.xml文件的工程，否则<br>mvn eclipse:eclipse命令会报错，大致的错误提示信息就是要求有一个pom.xml文件的工程<br><code>mvn eclipse:eclipse</code>  <code>mvn idea:idea</code></li>
+<li><p>Maven3把命令行创建的web工程转成Eclipse和IntelliJ Idea的工程<br>  在执行mvn eclipse:eclipse命令之前一定要先存在一个含有pom.xml文件的工程，否则<br>mvn eclipse:eclipse命令会报错，大致的错误提示信息就是要求有一个pom.xml文件的工程<br><code>mvn eclipse:eclipse</code>  <code>mvn idea:idea</code></p>
+</li>
+<li><p>maven配置文件(1)maven安装目录下conf/setting.xml<br>(2)${user.dir} /.m2/settings.xml</p>
+</li>
 </ul>
 
           
@@ -790,7 +912,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
