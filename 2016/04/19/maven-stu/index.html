@@ -96,7 +96,7 @@
       &amp;lt;plugin&amp;gt;
         &amp;lt;groupId&amp;gt;org.apache.maven.plugins&amp;lt;/groupId&amp;gt;
         &amp;lt;artifactId&amp;gt;maven-surefire-plugin&amp;lt;/artifac">
-<meta property="og:updated_time" content="2016-04-29T08:47:36.686Z">
+<meta property="og:updated_time" content="2016-05-10T03:31:59.418Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="maven相关知识点">
 <meta name="twitter:description" content="maven中加入插件跳过test代码运行
@@ -308,6 +308,20 @@
     --&gt;
  &lt;/pluginGroups&gt;
 </code></pre></li>
+<li><p>maven中指定jdk版本 </p>
+<pre><code>&lt;plugin&gt;  
+    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;  
+    &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;  
+    &lt;configuration&gt;  
+      &lt;source&gt;1.7&lt;/source&gt;  
+      &lt;target&gt;1.7&lt;/target&gt;  
+    &lt;/configuration&gt;  
+  &lt;/plugin&gt;
+</code></pre></li>
+<li><p>Maven3把命令行创建的web工程转成Eclipse和IntelliJ Idea的工程<br>  在执行mvn eclipse:eclipse命令之前一定要先存在一个含有pom.xml文件的工程，否则<br>mvn eclipse:eclipse命令会报错，大致的错误提示信息就是要求有一个pom.xml文件的工程<br><code>mvn eclipse:eclipse</code>  <code>mvn idea:idea</code></p>
+</li>
+<li><p>maven配置文件(1)maven安装目录下conf/setting.xml<br>(2)${user.dir} /.m2/settings.xml</p>
+</li>
 </ul>
 
       
@@ -410,7 +424,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

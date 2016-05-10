@@ -229,6 +229,102 @@
             
               
                 
+                <a class="post-title-link" href="/2016/05/10/jquery-time-picker/" itemprop="url">
+                  'jquery-time-picker'
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-10T11:35:12+08:00" content="2016-05-10">
+              2016-05-10
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="jquery-timepicker-在bootstrap中的模态窗口中不能正常显示，而直接写在页面中的控件没问题"><a href="#jquery-timepicker-在bootstrap中的模态窗口中不能正常显示，而直接写在页面中的控件没问题" class="headerlink" title="jquery timepicker 在bootstrap中的模态窗口中不能正常显示，而直接写在页面中的控件没问题"></a>jquery timepicker 在bootstrap中的模态窗口中不能正常显示，而直接写在页面中的控件没问题</h3><blockquote>
+<p>问题(日期正常，但是时间控件在firefox中无法选择，在chrome中没有任何问题)解决方法了，就是将<code>&lt;div class=&quot;modal fade&quot; id=&quot;addWebDlg&quot; tabindex=&quot;-1&quot; ...&gt;</code> 中的<code>tabindex=&quot;-1&quot;</code>去掉，但还是不知道为什么会这样</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/04/29/ajax-fileupload/" itemprop="url">
                   ajax fileupload
                 </a>
@@ -517,6 +613,20 @@
     --&gt;
  &lt;/pluginGroups&gt;
 </code></pre></li>
+<li><p>maven中指定jdk版本 </p>
+<pre><code>&lt;plugin&gt;  
+    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;  
+    &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;  
+    &lt;configuration&gt;  
+      &lt;source&gt;1.7&lt;/source&gt;  
+      &lt;target&gt;1.7&lt;/target&gt;  
+    &lt;/configuration&gt;  
+  &lt;/plugin&gt;
+</code></pre></li>
+<li><p>Maven3把命令行创建的web工程转成Eclipse和IntelliJ Idea的工程<br>  在执行mvn eclipse:eclipse命令之前一定要先存在一个含有pom.xml文件的工程，否则<br>mvn eclipse:eclipse命令会报错，大致的错误提示信息就是要求有一个pom.xml文件的工程<br><code>mvn eclipse:eclipse</code>  <code>mvn idea:idea</code></p>
+</li>
+<li><p>maven配置文件(1)maven安装目录下conf/setting.xml<br>(2)${user.dir} /.m2/settings.xml</p>
+</li>
 </ul>
 
           
@@ -898,7 +1008,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
